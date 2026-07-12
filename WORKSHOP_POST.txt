@@ -10,6 +10,7 @@ This mod adds the Regalia weapon family: two modular 7.62x51 battle rifles with 
 FEATURES
 • Regalia — a configurable automatic battle rifle with a grounded base setup.
 • Regalia Prism — a faster, stronger and more controllable colourful variant.
+• Compatible with all standard scopes and optics.
 • Compact, Standard and Grand stocks.
 • Standard and Grand grips, including colourful Prism variants.
 • Compact brake, Standard compensator and Grand suppressor.
@@ -28,4 +29,4 @@ NOTE
 The numbers shown on the item icons are trader stock quantities, not weapon or attachment stats.
 
 VERSION
-v1.1.0
+v1.2.0

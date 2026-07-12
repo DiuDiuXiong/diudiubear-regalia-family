@@ -8,7 +8,7 @@ SpriteLoad("wz_ddb_regalia_body_prism_ingame","items/regalia_body_prism.png",1,0
 -- Create Regalia.
 WeaponCreate("wz_ddb_regalia","rifle",true,"ammo_762x51","a762x51");
 ItemSetName("wz_ddb_regalia","Regalia");
-ItemSetDescription("wz_ddb_regalia","A modular 7.62x51 battle rifle built around the sealed Regalia attachment standard. It accepts only Regalia-family components.");
+ItemSetDescription("wz_ddb_regalia","A modular 7.62x51 battle rifle built around the sealed Regalia attachment standard. It accepts Regalia-family components and standard optics.");
 ItemSetSpriteInventory("wz_ddb_regalia","wz_ddb_regalia_body_inventory");
 ItemSetSpriteIngame("wz_ddb_regalia","wz_ddb_regalia_body_ingame");
 ItemSetPriceValue("wz_ddb_regalia",80000);
@@ -28,7 +28,7 @@ WeaponSetErgonomics("wz_ddb_regalia",38);
 -- Create Regalia Prism.
 WeaponCreate("wz_ddb_regalia_prism","rifle",true,"ammo_762x51","a762x51");
 ItemSetName("wz_ddb_regalia_prism","Regalia Prism");
-ItemSetDescription("wz_ddb_regalia_prism","A tuned, colourful Regalia receiver with greater power, tighter recoil control and faster handling. It accepts only Regalia-family components.");
+ItemSetDescription("wz_ddb_regalia_prism","A tuned, colourful Regalia receiver with greater power, tighter recoil control and faster handling. It accepts Regalia-family components and standard optics.");
 ItemSetSpriteInventory("wz_ddb_regalia_prism","wz_ddb_regalia_body_prism_inventory");
 ItemSetSpriteIngame("wz_ddb_regalia_prism","wz_ddb_regalia_body_prism_ingame");
 ItemSetPriceValue("wz_ddb_regalia_prism",354000);
