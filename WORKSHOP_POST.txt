@@ -5,8 +5,6 @@ SHORT DESCRIPTION
 Adds two modular 7.62x51 Regalia rifles, exclusive attachments, custom sounds, and Diu Diu Bear as a bunker trader beside the Networker.
 
 FULL WORKSHOP DESCRIPTION
-Meet Diu Diu Bear — the bunker’s new specialist in colourful, high-powered hardware.
-
 This mod adds the Regalia weapon family: two modular 7.62x51 battle rifles with their own exclusive attachment ecosystem and custom audio.
 
 FEATURES
