@@ -38,6 +38,7 @@ TraderAddItem("wz_ddb_trader","armor_end_game",1,0);
 TraderAddItem("wz_ddb_trader","backpack_end_game",1,0);
 
 -- Diu Diu medical supplies.
+TraderAddItem("wz_ddb_trader","wz_ddb_medkit_red",6,0);
 TraderAddItem("wz_ddb_trader","wz_ddb_medpack_red",6,0);
 
 -- Diu Diu Bear idle appearance.

@@ -1,3 +1,22 @@
+-- Create Diu Diu's red medkit.
+SpriteLoad("wz_ddb_medkit_red","items/inventory/med_red_icon_16x16.png",1,0,0,0);
+
+ItemMedicalCreate("wz_ddb_medkit_red",1000,1000,"snd_medikit_1");
+ItemSetName("wz_ddb_medkit_red","Diu Diu Red Medkit");
+ItemSetDescription("wz_ddb_medkit_red","A rapid-use medkit that fully restores HP and clears bleeding, wounds and radiation.");
+ItemSetSpriteInventory("wz_ddb_medkit_red","wz_ddb_medkit_red");
+ItemSetSpriteIngame("wz_ddb_medkit_red","wz_ddb_medkit_red");
+ItemSetPriceValue("wz_ddb_medkit_red",30000);
+ItemSetWeight("wz_ddb_medkit_red",0.3);
+ItemSetStackLimit("wz_ddb_medkit_red",1);
+ItemMedicalSetAnimation("wz_ddb_medkit_red","s_arms_med1");
+ItemMedicalSetDuration("wz_ddb_medkit_red",30);
+ItemMedicalSetBleed("wz_ddb_medkit_red",100);
+ItemMedicalSetWound("wz_ddb_medkit_red",100);
+ItemMedicalSetRadiation("wz_ddb_medkit_red",1000);
+ItemMedicalSetCanMove("wz_ddb_medkit_red",true);
+ItemMedicalSetMoveSpeedMultiplier("wz_ddb_medkit_red",0.5);
+
 -- Create Diu Diu's omnistim needle.
 SpriteLoad("wz_ddb_medpack_red","items/inventory/diu_diu_omnistim_16x16.png",1,0,0,0);
 
