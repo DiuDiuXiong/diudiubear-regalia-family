@@ -1,0 +1,26 @@
+-- Create Diu Diu's red combat medpack.
+SpriteLoad("wz_ddb_medpack_red","items/inventory/med_red_icon_16x16.png",1,0,0,0);
+
+ItemInjectorCreate("wz_ddb_medpack_red");
+ItemSetName("wz_ddb_medpack_red","Diu Diu Red Medpack");
+ItemSetDescription("wz_ddb_medpack_red","Restores 100 HP over 60 seconds, removes one bleed and grants +10 maximum HP while active.");
+ItemSetSpriteInventory("wz_ddb_medpack_red","wz_ddb_medpack_red");
+ItemSetSpriteIngame("wz_ddb_medpack_red","wz_ddb_medpack_red");
+ItemSetPriceValue("wz_ddb_medpack_red",9000);
+ItemSetWeight("wz_ddb_medpack_red",0.3);
+ItemSetStackLimit("wz_ddb_medpack_red",1);
+
+ItemInjectorSetDuration("wz_ddb_medpack_red",3600);
+ItemInjectorSetHpRegen("wz_ddb_medpack_red",100);
+ItemInjectorSetMaxHp("wz_ddb_medpack_red",10);
+ItemInjectorSetBleedImmune("wz_ddb_medpack_red",false);
+ItemInjectorSetBleedRec("wz_ddb_medpack_red",1);
+ItemInjectorSetHunger("wz_ddb_medpack_red",0);
+ItemInjectorSetHungerRegen("wz_ddb_medpack_red",0);
+ItemInjectorSetMaxWeight("wz_ddb_medpack_red",0);
+ItemInjectorSetRadDef("wz_ddb_medpack_red",0);
+ItemInjectorSetRadRegen("wz_ddb_medpack_red",0);
+ItemInjectorSetStaminaMax("wz_ddb_medpack_red",0);
+ItemInjectorSetStaminaRegen("wz_ddb_medpack_red",0);
+ItemInjectorSetThirst("wz_ddb_medpack_red",0);
+ItemInjectorSetThirstRegen("wz_ddb_medpack_red",0);

@@ -1,7 +1,8 @@
--- Diu Diu Bear's Regalia Armory v1.2.1
--- Load weapons, attachments, factory configurations, sounds, and trader data.
+-- Diu Diu Bear's Regalia Armory v1.3.0
+-- Load weapons, attachments, medical items, factory configurations, sounds, and trader data.
 ScriptExecute("scripts/regalia.script");
 ScriptExecute("scripts/regalia_attachments.script");
+ScriptExecute("scripts/medpack.script");
 ScriptExecute("scripts/regalia_factory_loadouts.script");
 ScriptExecute("scripts/regalia_sounds.script");
 ScriptExecute("scripts/trades.script");
