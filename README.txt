@@ -5,7 +5,7 @@ CONTENTS
 - Regalia Prism: a faster, stronger colourful variant.
 - Exclusive stocks, grips, muzzle devices, magazine, and hidden barrel core.
 - Compatible with all standard scopes and optics.
-- Diu Diu Red Medkit: fully restores medical values in 0.5 seconds.
+- Diu Diu Red Medkit: maxes HP, food, drink and energy and clears bleeding and radiation in 0.5 seconds.
 - Diu Diu Omnistim: rapidly restores vital resources and greatly boosts survivability for 60 seconds.
 - Custom firing, suppressor, and reload sounds.
 - Diu Diu Bear, a bunker trader located beside the Networker.
