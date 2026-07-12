@@ -1,9 +1,12 @@
 -- Create Diu Diu's red medkit.
 SpriteLoad("wz_ddb_medkit_red","items/inventory/med_red_icon_16x16.png",1,0,0,0);
 
-ItemMedicalCreate("wz_ddb_medkit_red",1000,1000,"snd_medikit_1");
+ItemMedicalCreate("wz_ddb_medkit_red",1000);
+ItemConsumableSetSound("wz_ddb_medkit_red","snd_medikit_1");
+ItemConsumableSetEnergy("wz_ddb_medkit_red",100);
+ItemConsumableSetFatigue("wz_ddb_medkit_red",-100);
 ItemSetName("wz_ddb_medkit_red","Diu Diu Red Medkit");
-ItemSetDescription("wz_ddb_medkit_red","A 0.5-second medical treatment that fully restores HP and clears bleeding, wounds and radiation.");
+ItemSetDescription("wz_ddb_medkit_red","A 0.5-second medical treatment that instantly restores HP, clears bleeding and wounds, and removes accumulated radiation.");
 ItemSetSpriteInventory("wz_ddb_medkit_red","wz_ddb_medkit_red");
 ItemSetSpriteIngame("wz_ddb_medkit_red","wz_ddb_medkit_red");
 ItemSetPriceValue("wz_ddb_medkit_red",30000);
@@ -13,7 +16,7 @@ ItemMedicalSetAnimation("wz_ddb_medkit_red","s_arms_med1");
 ItemMedicalSetDuration("wz_ddb_medkit_red",30);
 ItemMedicalSetBleed("wz_ddb_medkit_red",100);
 ItemMedicalSetWound("wz_ddb_medkit_red",100);
-ItemMedicalSetRadiation("wz_ddb_medkit_red",1000);
+ItemMedicalSetRadiation("wz_ddb_medkit_red",-100);
 ItemMedicalSetCanMove("wz_ddb_medkit_red",true);
 ItemMedicalSetMoveSpeedMultiplier("wz_ddb_medkit_red",0.5);
 
@@ -22,24 +25,24 @@ SpriteLoad("wz_ddb_medpack_red","items/inventory/diu_diu_omnistim_16x16.png",1,0
 
 ItemInjectorCreate("wz_ddb_medpack_red");
 ItemSetName("wz_ddb_medpack_red","Diu Diu Omnistim");
-ItemSetDescription("wz_ddb_medpack_red","For 60 seconds, rapidly restores vital resources, prevents bleeding and greatly boosts maximum HP, stamina, carry weight and radiation defence.");
+ItemSetDescription("wz_ddb_medpack_red","For 90 seconds, applies extreme regeneration, removes 10 radiation per second, and increases carrying capacity by 80 kg.");
 ItemSetSpriteInventory("wz_ddb_medpack_red","wz_ddb_medpack_red");
 ItemSetSpriteIngame("wz_ddb_medpack_red","wz_ddb_medpack_red");
 ItemSetPriceValue("wz_ddb_medpack_red",50000);
 ItemSetWeight("wz_ddb_medpack_red",0.1);
 ItemSetStackLimit("wz_ddb_medpack_red",1);
 
-ItemInjectorSetDuration("wz_ddb_medpack_red",3600);
-ItemInjectorSetHpRegen("wz_ddb_medpack_red",1000);
-ItemInjectorSetMaxHp("wz_ddb_medpack_red",100);
-ItemInjectorSetBleedImmune("wz_ddb_medpack_red",true);
-ItemInjectorSetBleedRec("wz_ddb_medpack_red",100);
-ItemInjectorSetHunger("wz_ddb_medpack_red",100);
-ItemInjectorSetHungerRegen("wz_ddb_medpack_red",1000);
-ItemInjectorSetMaxWeight("wz_ddb_medpack_red",100);
-ItemInjectorSetRadDef("wz_ddb_medpack_red",1000);
-ItemInjectorSetRadRegen("wz_ddb_medpack_red",1000);
-ItemInjectorSetStaminaMax("wz_ddb_medpack_red",100);
-ItemInjectorSetStaminaRegen("wz_ddb_medpack_red",1000);
-ItemInjectorSetThirst("wz_ddb_medpack_red",100);
-ItemInjectorSetThirstRegen("wz_ddb_medpack_red",1000);
+ItemInjectorSetDuration("wz_ddb_medpack_red",5400);
+ItemInjectorSetHpRegen("wz_ddb_medpack_red",300);
+ItemInjectorSetMaxHp("wz_ddb_medpack_red",0);
+ItemInjectorSetBleedImmune("wz_ddb_medpack_red",false);
+ItemInjectorSetBleedRec("wz_ddb_medpack_red",300);
+ItemInjectorSetHunger("wz_ddb_medpack_red",0);
+ItemInjectorSetHungerRegen("wz_ddb_medpack_red",300);
+ItemInjectorSetMaxWeight("wz_ddb_medpack_red",80);
+ItemInjectorSetRadDef("wz_ddb_medpack_red",0);
+ItemInjectorSetRadRegen("wz_ddb_medpack_red",10);
+ItemInjectorSetStaminaMax("wz_ddb_medpack_red",0);
+ItemInjectorSetStaminaRegen("wz_ddb_medpack_red",300);
+ItemInjectorSetThirst("wz_ddb_medpack_red",0);
+ItemInjectorSetThirstRegen("wz_ddb_medpack_red",300);

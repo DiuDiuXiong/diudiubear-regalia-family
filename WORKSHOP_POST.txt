@@ -17,7 +17,7 @@ FEATURES
 • A dedicated 30-round Regalia magazine.
 • Mutated Crystal armor and the Crystal backpack.
 • Diu Diu Red Medkit, a 0.5-second full-vitals recovery item sold for 30,000.
-• Diu Diu Omnistim, a one-minute all-stat boost sold for 50,000.
+• Diu Diu Omnistim, a one-minute 30x regeneration boost , sold for 50,000.
 • Custom firing, suppressed and reload sounds.
 • Diu Diu Bear, a custom polar-bear trader beside the Networker in the bunker.
 
