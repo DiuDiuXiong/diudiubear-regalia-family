@@ -1,5 +1,5 @@
 TITLE
-Diu Diu Bear's Regalia Arsenal
+Diu Diu Bear's Regalia Armory
 
 SHORT DESCRIPTION
 Adds two modular 7.62x51 Regalia rifles, exclusive attachments, custom sounds, and Diu Diu Bear as a bunker trader beside the Networker.
