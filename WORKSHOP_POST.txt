@@ -20,5 +20,11 @@ FEATURES
 WHERE TO FIND THE ITEMS
 Talk to Diu Diu Bear beside the Networker. The shop stocks both receivers, all available attachments and 7.62x51 ammunition.
 
+SHOWCASE
+The screenshots show the Regalia and Regalia Prism receivers, their stock and grip variants, and the available muzzle devices and magazine.
+
+NOTE
+The numbers shown on the item icons are trader stock quantities, not weapon or attachment stats.
+
 VERSION
 v1.0.0
