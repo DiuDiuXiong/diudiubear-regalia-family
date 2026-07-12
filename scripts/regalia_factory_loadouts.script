@@ -9,7 +9,7 @@ WeaponSetWeaponModData("wz_ddb_regalia","grip","wz_ddb_regalia_grip_standard",fa
 WeaponSetWeaponModData("wz_ddb_regalia","barrel","wz_ddb_regalia_barrel_core",true,52,10);
 WeaponSetWeaponModData("wz_ddb_regalia","brake","wz_ddb_regalia_front_compact",false,52,10);
 WeaponSetWeaponModData("wz_ddb_regalia","magazine","wz_ddb_regalia_magazine_standard",true,30,16);
-WeaponSetWeaponModData("wz_ddb_regalia","scope","no_item",false,29,7);
+WeaponSetWeaponModData("wz_ddb_regalia","scope","no_item",false,29,9);
 
 -- Prism receiver factory build: the default installed parts use the standard
 -- non-colour family so the colourful attachments remain optional upgrades.
@@ -18,4 +18,4 @@ WeaponSetWeaponModData("wz_ddb_regalia_prism","grip","wz_ddb_regalia_grip_standa
 WeaponSetWeaponModData("wz_ddb_regalia_prism","barrel","wz_ddb_regalia_barrel_core",true,52,10);
 WeaponSetWeaponModData("wz_ddb_regalia_prism","brake","wz_ddb_regalia_front_compact",false,52,10);
 WeaponSetWeaponModData("wz_ddb_regalia_prism","magazine","wz_ddb_regalia_magazine_standard",true,30,16);
-WeaponSetWeaponModData("wz_ddb_regalia_prism","scope","no_item",false,29,7);
+WeaponSetWeaponModData("wz_ddb_regalia_prism","scope","no_item",false,29,9);

@@ -29,4 +29,4 @@ NOTE
 The numbers shown on the item icons are trader stock quantities, not weapon or attachment stats.
 
 VERSION
-v1.2.0
+v1.2.1

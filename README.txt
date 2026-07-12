@@ -1,4 +1,4 @@
-Diu Diu Bear's Regalia Armory — v1.2.0
+Diu Diu Bear's Regalia Armory — v1.2.1
 
 CONTENTS
 - Regalia: a modular 7.62x51 battle rifle.
