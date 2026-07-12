@@ -1,28 +1,21 @@
 -- Create Diu Diu's red medkit.
 SpriteLoad("wz_ddb_medkit_red","items/inventory/med_red_icon_16x16.png",1,0,0,0);
 
-ItemInjectorCreate("wz_ddb_medkit_red");
+ItemMedicalCreate("wz_ddb_medkit_red",1000,1000,"snd_medikit_1");
 ItemSetName("wz_ddb_medkit_red","Diu Diu Red Medkit");
-ItemSetDescription("wz_ddb_medkit_red","Maxes HP, food, drink and energy over 0.5 seconds while clearing bleeding and radiation.");
+ItemSetDescription("wz_ddb_medkit_red","A 0.5-second medical treatment that fully restores HP and clears bleeding, wounds and radiation.");
 ItemSetSpriteInventory("wz_ddb_medkit_red","wz_ddb_medkit_red");
 ItemSetSpriteIngame("wz_ddb_medkit_red","wz_ddb_medkit_red");
 ItemSetPriceValue("wz_ddb_medkit_red",30000);
 ItemSetWeight("wz_ddb_medkit_red",0.3);
 ItemSetStackLimit("wz_ddb_medkit_red",1);
-ItemInjectorSetDuration("wz_ddb_medkit_red",30);
-ItemInjectorSetHpRegen("wz_ddb_medkit_red",1000);
-ItemInjectorSetMaxHp("wz_ddb_medkit_red",0);
-ItemInjectorSetBleedImmune("wz_ddb_medkit_red",true);
-ItemInjectorSetBleedRec("wz_ddb_medkit_red",100);
-ItemInjectorSetHunger("wz_ddb_medkit_red",100);
-ItemInjectorSetHungerRegen("wz_ddb_medkit_red",1000);
-ItemInjectorSetMaxWeight("wz_ddb_medkit_red",0);
-ItemInjectorSetRadDef("wz_ddb_medkit_red",1000);
-ItemInjectorSetRadRegen("wz_ddb_medkit_red",1000);
-ItemInjectorSetStaminaMax("wz_ddb_medkit_red",0);
-ItemInjectorSetStaminaRegen("wz_ddb_medkit_red",1000);
-ItemInjectorSetThirst("wz_ddb_medkit_red",100);
-ItemInjectorSetThirstRegen("wz_ddb_medkit_red",1000);
+ItemMedicalSetAnimation("wz_ddb_medkit_red","s_arms_med1");
+ItemMedicalSetDuration("wz_ddb_medkit_red",30);
+ItemMedicalSetBleed("wz_ddb_medkit_red",100);
+ItemMedicalSetWound("wz_ddb_medkit_red",100);
+ItemMedicalSetRadiation("wz_ddb_medkit_red",1000);
+ItemMedicalSetCanMove("wz_ddb_medkit_red",true);
+ItemMedicalSetMoveSpeedMultiplier("wz_ddb_medkit_red",0.5);
 
 -- Create Diu Diu's omnistim needle.
 SpriteLoad("wz_ddb_medpack_red","items/inventory/diu_diu_omnistim_16x16.png",1,0,0,0);
