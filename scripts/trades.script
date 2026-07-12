@@ -33,6 +33,10 @@ TraderAddItem("wz_ddb_trader","wz_ddb_regalia_grip_grand_prism",2,0);
 TraderAddItem("wz_ddb_trader","ammo_762x51",1000,0);
 TraderAddItem("wz_ddb_trader","ammo_762x51_m61",500,0);
 
+-- Crystal equipment.
+TraderAddItem("wz_ddb_trader","armor_end_game",1,0);
+TraderAddItem("wz_ddb_trader","backpack_end_game",1,0);
+
 -- Diu Diu Bear idle appearance.
 SpriteLoad("wz_ddb_bear_idle","NPCs/diu_diu_bear_idle.png",2,false,0,0);
 SpriteSetOrigin(

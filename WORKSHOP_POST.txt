@@ -14,11 +14,12 @@ FEATURES
 • Standard and Grand grips, including colourful Prism variants.
 • Compact brake, Standard compensator and Grand suppressor.
 • A dedicated 30-round Regalia magazine.
+• Mutated Crystal armor and the Crystal backpack.
 • Custom firing, suppressed and reload sounds.
 • Diu Diu Bear, a custom polar-bear trader beside the Networker in the bunker.
 
 WHERE TO FIND THE ITEMS
-Talk to Diu Diu Bear beside the Networker. The shop stocks both receivers, all available attachments and 7.62x51 ammunition.
+Talk to Diu Diu Bear beside the Networker. The shop stocks both receivers, all available attachments, 7.62x51 ammunition, Mutated Crystal armor and the Crystal backpack.
 
 SHOWCASE
 The screenshots show the Regalia and Regalia Prism receivers, their stock and grip variants, and the available muzzle devices and magazine.
