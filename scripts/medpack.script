@@ -1,7 +1,7 @@
 -- Create Diu Diu's red medkit.
 SpriteLoad("wz_ddb_medkit_red","items/inventory/med_red_icon_16x16.png",1,0,0,0);
 
-ItemMedicalCreate("wz_ddb_medkit_red",1000);
+ItemMedicalCreate("wz_ddb_medkit_red",100);
 ItemConsumableSetSound("wz_ddb_medkit_red","snd_medikit_1");
 ItemConsumableSetEnergy("wz_ddb_medkit_red",100);
 ItemConsumableSetFatigue("wz_ddb_medkit_red",-100);
@@ -11,7 +11,7 @@ ItemSetSpriteInventory("wz_ddb_medkit_red","wz_ddb_medkit_red");
 ItemSetSpriteIngame("wz_ddb_medkit_red","wz_ddb_medkit_red");
 ItemSetPriceValue("wz_ddb_medkit_red",30000);
 ItemSetWeight("wz_ddb_medkit_red",0.3);
-ItemSetStackLimit("wz_ddb_medkit_red",1);
+ItemSetStackLimit("wz_ddb_medkit_red",5);
 ItemMedicalSetAnimation("wz_ddb_medkit_red","s_arms_med1");
 ItemMedicalSetDuration("wz_ddb_medkit_red",30);
 ItemMedicalSetBleed("wz_ddb_medkit_red",100);
@@ -30,7 +30,7 @@ ItemSetSpriteInventory("wz_ddb_medpack_red","wz_ddb_medpack_red");
 ItemSetSpriteIngame("wz_ddb_medpack_red","wz_ddb_medpack_red");
 ItemSetPriceValue("wz_ddb_medpack_red",50000);
 ItemSetWeight("wz_ddb_medpack_red",0.1);
-ItemSetStackLimit("wz_ddb_medpack_red",1);
+ItemSetStackLimit("wz_ddb_medpack_red",5);
 
 ItemInjectorSetDuration("wz_ddb_medpack_red",5400);
 ItemInjectorSetHpRegen("wz_ddb_medpack_red",300);
@@ -41,7 +41,7 @@ ItemInjectorSetHunger("wz_ddb_medpack_red",0);
 ItemInjectorSetHungerRegen("wz_ddb_medpack_red",300);
 ItemInjectorSetMaxWeight("wz_ddb_medpack_red",80);
 ItemInjectorSetRadDef("wz_ddb_medpack_red",0);
-ItemInjectorSetRadRegen("wz_ddb_medpack_red",10);
+ItemInjectorSetRadRegen("wz_ddb_medpack_red",300);
 ItemInjectorSetStaminaMax("wz_ddb_medpack_red",0);
 ItemInjectorSetStaminaRegen("wz_ddb_medpack_red",300);
 ItemInjectorSetThirst("wz_ddb_medpack_red",0);
