@@ -22,8 +22,5 @@ FEATURES
 WHERE TO FIND THE ITEMS
 Talk to Diu Diu Bear beside the Networker. The shop stocks both receivers, all available attachments and 7.62x51 ammunition.
 
-COMPATIBILITY
-The mod uses its own wz_ddb_ internal namespace to reduce ID conflicts. Avoid enabling a local development copy and the subscribed Workshop copy simultaneously.
-
 VERSION
 v1.0.0

@@ -1,14 +1,5 @@
 -- Regalia-only attachments.
--- WeaponModCreate layout:
--- id, mod type, accuracy, damage, ergonomics, recoil, reload speed,
--- scope optic, compatible weapon IDs, optional attachment slots.
--- Item prices are configured separately with ItemSetPriceValue.
-
--- --------------------------------------------------------------------------
--- Sprites: both inventory and in-game sprites reference the cropped files.
--- Each slot uses one shared crop rectangle so every variant aligns identically.
--- Every cropped attachment is at most 14x11, so it occupies one inventory grid cell.
--- --------------------------------------------------------------------------
+-- Load attachment sprites.
 SpriteLoad("wz_ddb_regalia_stock_compact_inventory","items/inventory/regalia_stock_compact.png",1,0,0,0);
 SpriteLoad("wz_ddb_regalia_stock_compact_ingame","items/cropped/regalia_stock_compact.png",1,0,0,0);
 SpriteLoad("wz_ddb_regalia_stock_standard_inventory","items/inventory/regalia_stock_standard.png",1,0,0,0);
@@ -45,9 +36,7 @@ SpriteLoad("wz_ddb_regalia_front_grand_ingame","items/cropped/regalia_front_gran
 SpriteLoad("wz_ddb_regalia_magazine_standard_inventory","items/inventory/regalia_magazine_standard.png",1,0,0,0);
 SpriteLoad("wz_ddb_regalia_magazine_standard_ingame","items/cropped/regalia_magazine_standard.png",1,0,0,0);
 
--- --------------------------------------------------------------------------
--- Original-colour stocks: larger parts provide larger bonuses.
--- --------------------------------------------------------------------------
+-- Create original-colour stocks.
 WeaponModCreate("wz_ddb_regalia_stock_compact","stock",0,0,2,-3,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
 ItemSetName("wz_ddb_regalia_stock_compact","Regalia Stock - Compact");
 ItemSetDescription("wz_ddb_regalia_stock_compact","A light Regalia stock. Small recoil and handling improvement.");
@@ -75,7 +64,7 @@ ItemSetPriceValue("wz_ddb_regalia_stock_grand",60000);
 ItemSetWeight("wz_ddb_regalia_stock_grand",0.60);
 ItemSetStackLimit("wz_ddb_regalia_stock_grand",1);
 
--- Prism stocks: stronger factory-only variants; intentionally absent from trader stock.
+-- Create Prism stocks.
 WeaponModCreate("wz_ddb_regalia_stock_compact_prism","stock",0,0,3,-5,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
 ItemSetName("wz_ddb_regalia_stock_compact_prism","Regalia Prism Stock - Compact");
 ItemSetDescription("wz_ddb_regalia_stock_compact_prism","A tuned colourful compact stock reserved for Prism factory builds.");
@@ -103,9 +92,7 @@ ItemSetPriceValue("wz_ddb_regalia_stock_grand_prism",85000);
 ItemSetWeight("wz_ddb_regalia_stock_grand_prism",0.54);
 ItemSetStackLimit("wz_ddb_regalia_stock_grand_prism",1);
 
--- --------------------------------------------------------------------------
--- Original-colour grips.
--- --------------------------------------------------------------------------
+-- Create original-colour grips.
 WeaponModCreate("wz_ddb_regalia_grip_standard","grip",0,0,3,-3,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
 ItemSetName("wz_ddb_regalia_grip_standard","Regalia Grip - Standard");
 ItemSetDescription("wz_ddb_regalia_grip_standard","A responsive Regalia grip with moderate recoil and ergonomics bonuses.");
@@ -124,7 +111,7 @@ ItemSetPriceValue("wz_ddb_regalia_grip_grand",45000);
 ItemSetWeight("wz_ddb_regalia_grip_grand",0.28);
 ItemSetStackLimit("wz_ddb_regalia_grip_grand",1);
 
--- Prism grips: stronger factory-only variants.
+-- Create Prism grips.
 WeaponModCreate("wz_ddb_regalia_grip_standard_prism","grip",0,0,5,-5,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
 ItemSetName("wz_ddb_regalia_grip_standard_prism","Regalia Prism Grip - Standard");
 ItemSetDescription("wz_ddb_regalia_grip_standard_prism","A tuned colourful standard grip reserved for Prism factory builds.");
@@ -143,10 +130,7 @@ ItemSetPriceValue("wz_ddb_regalia_grip_grand_prism",65000);
 ItemSetWeight("wz_ddb_regalia_grip_grand_prism",0.25);
 ItemSetStackLimit("wz_ddb_regalia_grip_grand_prism",1);
 
--- --------------------------------------------------------------------------
--- Required invisible barrel core. ZERO Sievert calculates brake/suppressor
--- placement from the installed barrel, so a valid barrel mod must exist.
--- --------------------------------------------------------------------------
+-- Create the internal barrel core.
 WeaponModCreate("wz_ddb_regalia_barrel_core","barrel",0,0,0,0,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
 ItemSetName("wz_ddb_regalia_barrel_core","Regalia Internal Barrel");
 ItemSetDescription("wz_ddb_regalia_barrel_core","A sealed internal barrel core required by the Regalia muzzle-device interface.");
@@ -156,11 +140,7 @@ ItemSetPriceValue("wz_ddb_regalia_barrel_core",0);
 ItemSetWeight("wz_ddb_regalia_barrel_core",0.0);
 ItemSetStackLimit("wz_ddb_regalia_barrel_core",1);
 
--- --------------------------------------------------------------------------
--- Shared original-colour muzzle devices.
--- Compact and Standard are normal brake-type muzzle devices.
--- Grand is the only true silencer and is configured separately in regalia_sounds.script.
--- --------------------------------------------------------------------------
+-- Create muzzle devices.
 WeaponModCreate("wz_ddb_regalia_front_compact","brake",0,1,1,-2,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
 ItemSetName("wz_ddb_regalia_front_compact","Regalia Muzzle Brake - Compact");
 ItemSetDescription("wz_ddb_regalia_front_compact","A compact Regalia muzzle brake with a small damage and recoil-control bonus. Fits only Regalia-family receivers.");
@@ -188,9 +168,7 @@ ItemSetPriceValue("wz_ddb_regalia_front_grand",200000);
 ItemSetWeight("wz_ddb_regalia_front_grand",0.55);
 ItemSetStackLimit("wz_ddb_regalia_front_grand",1);
 
--- --------------------------------------------------------------------------
--- Shared magazine.
--- --------------------------------------------------------------------------
+-- Create the magazine.
 WeaponModCreate("wz_ddb_regalia_magazine_standard","magazine",0,0,2,0,-2,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
 WeaponSetMagazineModCapacity("wz_ddb_regalia_magazine_standard",30);
 ItemSetName("wz_ddb_regalia_magazine_standard","Regalia Magazine - Standard");

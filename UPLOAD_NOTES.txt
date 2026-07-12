@@ -1,9 +1,0 @@
-FIRST UPLOAD CHECKLIST
-1. Keep the folder name: diudiubear_regalia_family
-2. Confirm Steam is running and logged into the intended account.
-3. Open ZERO Sievert's Mod Manager and choose Upload for this folder.
-4. The first upload must use meta.ini without workshop_id.
-5. After Steam creates the Workshop item, add this line below [leave blank]:
-   workshop_id=YOUR_NEW_WORKSHOP_ID
-6. Keep that new ID for all future updates.
-7. Test the subscribed Workshop copy with the local copy disabled.
