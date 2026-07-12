@@ -16,7 +16,7 @@ FEATURES
 • Compact brake, Standard compensator and Grand suppressor.
 • A dedicated 30-round Regalia magazine.
 • Mutated Crystal armor and the Crystal backpack.
-• Diu Diu Red Medpack with 100 HP regeneration and +10 maximum HP for 60 seconds.
+• Diu Diu Omnistim, a one-minute boost that rapidly restores vital resources and greatly increases survivability.
 • Custom firing, suppressed and reload sounds.
 • Diu Diu Bear, a custom polar-bear trader beside the Networker in the bunker.
 
@@ -30,4 +30,4 @@ NOTE
 The numbers shown on the item icons are trader stock quantities, not weapon or attachment stats.
 
 VERSION
-v1.3.0
+v1.4.0
