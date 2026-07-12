@@ -1,0 +1,26 @@
+-- Regalia sound resources.
+-- The Grand front attachment is the family's true suppressor.
+
+SoundLoad("wz_ddb_regalia_sound_unsuppressed","sounds/regalia_unsuppressed.ogg");
+SoundLoad("wz_ddb_regalia_sound_suppressor_grand","sounds/regalia_suppressor_grand.ogg");
+SoundLoad("wz_ddb_regalia_sound_magazine_in","sounds/regalia_magazine_in.ogg");
+SoundLoad("wz_ddb_regalia_sound_magazine_out","sounds/regalia_magazine_out.ogg");
+
+WeaponModSilencerConfigure(
+    "wz_ddb_regalia_front_grand",
+    SoundGet("wz_ddb_regalia_sound_suppressor_grand")
+);
+
+WeaponSetSounds(
+    "wz_ddb_regalia",
+    "wz_ddb_regalia_sound_unsuppressed",
+    "wz_ddb_regalia_sound_magazine_in",
+    "wz_ddb_regalia_sound_magazine_out"
+);
+
+WeaponSetSounds(
+    "wz_ddb_regalia_prism",
+    "wz_ddb_regalia_sound_unsuppressed",
+    "wz_ddb_regalia_sound_magazine_in",
+    "wz_ddb_regalia_sound_magazine_out"
+);

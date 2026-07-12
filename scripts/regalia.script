@@ -1,0 +1,47 @@
+-- Regalia Family receivers.
+-- Both weapons are created from raw data and inherit no vanilla attachments.
+
+SpriteLoad("wz_ddb_regalia_body_inventory","items/regalia_body.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_body_ingame","items/regalia_body.png",1,0,27,18);
+SpriteLoad("wz_ddb_regalia_body_prism_inventory","items/regalia_body_prism.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_body_prism_ingame","items/regalia_body_prism.png",1,0,27,18);
+
+-- Original receiver: EC-308-like bare statistics, targeting 600 RPM.
+WeaponCreate("wz_ddb_regalia","rifle",true,"ammo_762x51","a762x51");
+ItemSetName("wz_ddb_regalia","Regalia");
+ItemSetDescription("wz_ddb_regalia","A modular 7.62x51 battle rifle built around the sealed Regalia attachment standard. It accepts only Regalia-family components.");
+ItemSetSpriteInventory("wz_ddb_regalia","wz_ddb_regalia_body_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia","wz_ddb_regalia_body_ingame");
+ItemSetPriceValue("wz_ddb_regalia",80000);
+ItemSetWeight("wz_ddb_regalia",3.7);
+ItemSetStackLimit("wz_ddb_regalia",1);
+WeaponSetAmmo("wz_ddb_regalia","ammo_762x51");
+WeaponSetCaliber("wz_ddb_regalia","a762x51");
+WeaponSetWeaponType("wz_ddb_regalia","rifle");
+WeaponSetFireMode("wz_ddb_regalia","automatic");
+WeaponSetRateOfFire("wz_ddb_regalia",6);
+WeaponSetReloadType("wz_ddb_regalia","magazine");
+WeaponSetReloadTime("wz_ddb_regalia",10);
+WeaponSetDamage("wz_ddb_regalia",34);
+WeaponSetRecoil("wz_ddb_regalia",72);
+WeaponSetErgonomics("wz_ddb_regalia",38);
+
+-- Colourful receiver: stronger base statistics, targeting 750 RPM.
+WeaponCreate("wz_ddb_regalia_prism","rifle",true,"ammo_762x51","a762x51");
+ItemSetName("wz_ddb_regalia_prism","Regalia Prism");
+ItemSetDescription("wz_ddb_regalia_prism","A tuned, colourful Regalia receiver with greater power, tighter recoil control and faster handling. It accepts only Regalia-family components.");
+ItemSetSpriteInventory("wz_ddb_regalia_prism","wz_ddb_regalia_body_prism_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_prism","wz_ddb_regalia_body_prism_ingame");
+ItemSetPriceValue("wz_ddb_regalia_prism",354000);
+ItemSetWeight("wz_ddb_regalia_prism",3.4);
+ItemSetStackLimit("wz_ddb_regalia_prism",1);
+WeaponSetAmmo("wz_ddb_regalia_prism","ammo_762x51");
+WeaponSetCaliber("wz_ddb_regalia_prism","a762x51");
+WeaponSetWeaponType("wz_ddb_regalia_prism","rifle");
+WeaponSetFireMode("wz_ddb_regalia_prism","automatic");
+WeaponSetRateOfFire("wz_ddb_regalia_prism",4.8);
+WeaponSetReloadType("wz_ddb_regalia_prism","magazine");
+WeaponSetReloadTime("wz_ddb_regalia_prism",8);
+WeaponSetDamage("wz_ddb_regalia_prism",50);
+WeaponSetRecoil("wz_ddb_regalia_prism",31);
+WeaponSetErgonomics("wz_ddb_regalia_prism",55);

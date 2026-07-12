@@ -1,0 +1,29 @@
+TITLE
+Diu Diu Bear's Regalia Arsenal
+
+SHORT DESCRIPTION
+Adds two modular 7.62x51 Regalia rifles, exclusive attachments, custom sounds, and Diu Diu Bear as a bunker trader beside the Networker.
+
+FULL WORKSHOP DESCRIPTION
+Meet Diu Diu Bear — the bunker’s new specialist in colourful, high-powered hardware.
+
+This mod adds the Regalia weapon family: two modular 7.62x51 battle rifles with their own exclusive attachment ecosystem and custom audio.
+
+FEATURES
+• Regalia — a configurable automatic battle rifle with a grounded base setup.
+• Regalia Prism — a faster, stronger and more controllable colourful variant.
+• Compact, Standard and Grand stocks.
+• Standard and Grand grips, including colourful Prism variants.
+• Compact brake, Standard compensator and Grand suppressor.
+• A dedicated 30-round Regalia magazine.
+• Custom firing, suppressed and reload sounds.
+• Diu Diu Bear, a custom polar-bear trader beside the Networker in the bunker.
+
+WHERE TO FIND THE ITEMS
+Talk to Diu Diu Bear beside the Networker. The shop stocks both receivers, all available attachments and 7.62x51 ammunition.
+
+COMPATIBILITY
+The mod uses its own wz_ddb_ internal namespace to reduce ID conflicts. Avoid enabling a local development copy and the subscribed Workshop copy simultaneously.
+
+VERSION
+v1.0.0

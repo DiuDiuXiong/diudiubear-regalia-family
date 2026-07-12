@@ -1,0 +1,202 @@
+-- Regalia-only attachments.
+-- WeaponModCreate layout:
+-- id, mod type, accuracy, damage, ergonomics, recoil, reload speed,
+-- scope optic, compatible weapon IDs, optional attachment slots.
+-- Item prices are configured separately with ItemSetPriceValue.
+
+-- --------------------------------------------------------------------------
+-- Sprites: both inventory and in-game sprites reference the cropped files.
+-- Each slot uses one shared crop rectangle so every variant aligns identically.
+-- Every cropped attachment is at most 14x11, so it occupies one inventory grid cell.
+-- --------------------------------------------------------------------------
+SpriteLoad("wz_ddb_regalia_stock_compact_inventory","items/inventory/regalia_stock_compact.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_compact_ingame","items/cropped/regalia_stock_compact.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_standard_inventory","items/inventory/regalia_stock_standard.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_standard_ingame","items/cropped/regalia_stock_standard.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_grand_inventory","items/inventory/regalia_stock_grand.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_grand_ingame","items/cropped/regalia_stock_grand.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_compact_prism_inventory","items/inventory/regalia_stock_compact_prism.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_compact_prism_ingame","items/cropped/regalia_stock_compact_prism.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_standard_prism_inventory","items/inventory/regalia_stock_standard_prism.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_standard_prism_ingame","items/cropped/regalia_stock_standard_prism.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_grand_prism_inventory","items/inventory/regalia_stock_grand_prism.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_stock_grand_prism_ingame","items/cropped/regalia_stock_grand_prism.png",1,0,0,0);
+
+SpriteLoad("wz_ddb_regalia_grip_standard_inventory","items/inventory/regalia_grip_standard.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_grip_standard_ingame","items/cropped/regalia_grip_standard.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_grip_grand_inventory","items/inventory/regalia_grip_grand.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_grip_grand_ingame","items/cropped/regalia_grip_grand.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_grip_standard_prism_inventory","items/inventory/regalia_grip_standard_prism.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_grip_standard_prism_ingame","items/cropped/regalia_grip_standard_prism.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_grip_grand_prism_inventory","items/inventory/regalia_grip_grand_prism.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_grip_grand_prism_ingame","items/cropped/regalia_grip_grand_prism.png",1,0,0,0);
+
+-- Hidden required barrel core used for muzzle-device positioning.
+SpriteLoad("wz_ddb_regalia_barrel_core_inventory","items/internal/regalia_barrel_core.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_barrel_core_ingame","items/internal/regalia_barrel_core.png",1,0,0,0);
+
+SpriteLoad("wz_ddb_regalia_front_compact_inventory","items/inventory/regalia_front_compact.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_front_compact_ingame","items/cropped/regalia_front_compact.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_front_standard_inventory","items/inventory/regalia_front_standard.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_front_standard_ingame","items/cropped/regalia_front_standard.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_front_grand_inventory","items/inventory/regalia_front_grand.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_front_grand_ingame","items/cropped/regalia_front_grand.png",1,0,0,0);
+
+SpriteLoad("wz_ddb_regalia_magazine_standard_inventory","items/inventory/regalia_magazine_standard.png",1,0,0,0);
+SpriteLoad("wz_ddb_regalia_magazine_standard_ingame","items/cropped/regalia_magazine_standard.png",1,0,0,0);
+
+-- --------------------------------------------------------------------------
+-- Original-colour stocks: larger parts provide larger bonuses.
+-- --------------------------------------------------------------------------
+WeaponModCreate("wz_ddb_regalia_stock_compact","stock",0,0,2,-3,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_stock_compact","Regalia Stock - Compact");
+ItemSetDescription("wz_ddb_regalia_stock_compact","A light Regalia stock. Small recoil and handling improvement.");
+ItemSetSpriteInventory("wz_ddb_regalia_stock_compact","wz_ddb_regalia_stock_compact_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_stock_compact","wz_ddb_regalia_stock_compact_ingame");
+ItemSetPriceValue("wz_ddb_regalia_stock_compact",18000);
+ItemSetWeight("wz_ddb_regalia_stock_compact",0.25);
+ItemSetStackLimit("wz_ddb_regalia_stock_compact",1);
+
+WeaponModCreate("wz_ddb_regalia_stock_standard","stock",0,0,4,-7,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_stock_standard","Regalia Stock - Standard");
+ItemSetDescription("wz_ddb_regalia_stock_standard","A balanced Regalia stock with strong recoil control and improved ergonomics.");
+ItemSetSpriteInventory("wz_ddb_regalia_stock_standard","wz_ddb_regalia_stock_standard_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_stock_standard","wz_ddb_regalia_stock_standard_ingame");
+ItemSetPriceValue("wz_ddb_regalia_stock_standard",35000);
+ItemSetWeight("wz_ddb_regalia_stock_standard",0.40);
+ItemSetStackLimit("wz_ddb_regalia_stock_standard",1);
+
+WeaponModCreate("wz_ddb_regalia_stock_grand","stock",0,0,7,-12,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_stock_grand","Regalia Stock - Grand");
+ItemSetDescription("wz_ddb_regalia_stock_grand","The largest original Regalia stock. Excellent recoil control and handling at additional weight.");
+ItemSetSpriteInventory("wz_ddb_regalia_stock_grand","wz_ddb_regalia_stock_grand_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_stock_grand","wz_ddb_regalia_stock_grand_ingame");
+ItemSetPriceValue("wz_ddb_regalia_stock_grand",60000);
+ItemSetWeight("wz_ddb_regalia_stock_grand",0.60);
+ItemSetStackLimit("wz_ddb_regalia_stock_grand",1);
+
+-- Prism stocks: stronger factory-only variants; intentionally absent from trader stock.
+WeaponModCreate("wz_ddb_regalia_stock_compact_prism","stock",0,0,3,-5,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_stock_compact_prism","Regalia Prism Stock - Compact");
+ItemSetDescription("wz_ddb_regalia_stock_compact_prism","A tuned colourful compact stock reserved for Prism factory builds.");
+ItemSetSpriteInventory("wz_ddb_regalia_stock_compact_prism","wz_ddb_regalia_stock_compact_prism_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_stock_compact_prism","wz_ddb_regalia_stock_compact_prism_ingame");
+ItemSetPriceValue("wz_ddb_regalia_stock_compact_prism",30000);
+ItemSetWeight("wz_ddb_regalia_stock_compact_prism",0.23);
+ItemSetStackLimit("wz_ddb_regalia_stock_compact_prism",1);
+
+WeaponModCreate("wz_ddb_regalia_stock_standard_prism","stock",0,0,6,-9,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_stock_standard_prism","Regalia Prism Stock - Standard");
+ItemSetDescription("wz_ddb_regalia_stock_standard_prism","A tuned colourful standard stock reserved for Prism factory builds.");
+ItemSetSpriteInventory("wz_ddb_regalia_stock_standard_prism","wz_ddb_regalia_stock_standard_prism_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_stock_standard_prism","wz_ddb_regalia_stock_standard_prism_ingame");
+ItemSetPriceValue("wz_ddb_regalia_stock_standard_prism",52000);
+ItemSetWeight("wz_ddb_regalia_stock_standard_prism",0.36);
+ItemSetStackLimit("wz_ddb_regalia_stock_standard_prism",1);
+
+WeaponModCreate("wz_ddb_regalia_stock_grand_prism","stock",0,0,9,-14,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_stock_grand_prism","Regalia Prism Stock - Grand");
+ItemSetDescription("wz_ddb_regalia_stock_grand_prism","The strongest Regalia stock, issued only on Prism factory builds.");
+ItemSetSpriteInventory("wz_ddb_regalia_stock_grand_prism","wz_ddb_regalia_stock_grand_prism_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_stock_grand_prism","wz_ddb_regalia_stock_grand_prism_ingame");
+ItemSetPriceValue("wz_ddb_regalia_stock_grand_prism",85000);
+ItemSetWeight("wz_ddb_regalia_stock_grand_prism",0.54);
+ItemSetStackLimit("wz_ddb_regalia_stock_grand_prism",1);
+
+-- --------------------------------------------------------------------------
+-- Original-colour grips.
+-- --------------------------------------------------------------------------
+WeaponModCreate("wz_ddb_regalia_grip_standard","grip",0,0,3,-3,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_grip_standard","Regalia Grip - Standard");
+ItemSetDescription("wz_ddb_regalia_grip_standard","A responsive Regalia grip with moderate recoil and ergonomics bonuses.");
+ItemSetSpriteInventory("wz_ddb_regalia_grip_standard","wz_ddb_regalia_grip_standard_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_grip_standard","wz_ddb_regalia_grip_standard_ingame");
+ItemSetPriceValue("wz_ddb_regalia_grip_standard",22000);
+ItemSetWeight("wz_ddb_regalia_grip_standard",0.18);
+ItemSetStackLimit("wz_ddb_regalia_grip_standard",1);
+
+WeaponModCreate("wz_ddb_regalia_grip_grand","grip",0,0,6,-6,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_grip_grand","Regalia Grip - Grand");
+ItemSetDescription("wz_ddb_regalia_grip_grand","The larger Regalia grip, offering the best original-colour control and handling.");
+ItemSetSpriteInventory("wz_ddb_regalia_grip_grand","wz_ddb_regalia_grip_grand_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_grip_grand","wz_ddb_regalia_grip_grand_ingame");
+ItemSetPriceValue("wz_ddb_regalia_grip_grand",45000);
+ItemSetWeight("wz_ddb_regalia_grip_grand",0.28);
+ItemSetStackLimit("wz_ddb_regalia_grip_grand",1);
+
+-- Prism grips: stronger factory-only variants.
+WeaponModCreate("wz_ddb_regalia_grip_standard_prism","grip",0,0,5,-5,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_grip_standard_prism","Regalia Prism Grip - Standard");
+ItemSetDescription("wz_ddb_regalia_grip_standard_prism","A tuned colourful standard grip reserved for Prism factory builds.");
+ItemSetSpriteInventory("wz_ddb_regalia_grip_standard_prism","wz_ddb_regalia_grip_standard_prism_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_grip_standard_prism","wz_ddb_regalia_grip_standard_prism_ingame");
+ItemSetPriceValue("wz_ddb_regalia_grip_standard_prism",36000);
+ItemSetWeight("wz_ddb_regalia_grip_standard_prism",0.16);
+ItemSetStackLimit("wz_ddb_regalia_grip_standard_prism",1);
+
+WeaponModCreate("wz_ddb_regalia_grip_grand_prism","grip",0,0,8,-8,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_grip_grand_prism","Regalia Prism Grip - Grand");
+ItemSetDescription("wz_ddb_regalia_grip_grand_prism","The strongest colourful Regalia grip, reserved for Prism factory builds.");
+ItemSetSpriteInventory("wz_ddb_regalia_grip_grand_prism","wz_ddb_regalia_grip_grand_prism_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_grip_grand_prism","wz_ddb_regalia_grip_grand_prism_ingame");
+ItemSetPriceValue("wz_ddb_regalia_grip_grand_prism",65000);
+ItemSetWeight("wz_ddb_regalia_grip_grand_prism",0.25);
+ItemSetStackLimit("wz_ddb_regalia_grip_grand_prism",1);
+
+-- --------------------------------------------------------------------------
+-- Required invisible barrel core. ZERO Sievert calculates brake/suppressor
+-- placement from the installed barrel, so a valid barrel mod must exist.
+-- --------------------------------------------------------------------------
+WeaponModCreate("wz_ddb_regalia_barrel_core","barrel",0,0,0,0,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_barrel_core","Regalia Internal Barrel");
+ItemSetDescription("wz_ddb_regalia_barrel_core","A sealed internal barrel core required by the Regalia muzzle-device interface.");
+ItemSetSpriteInventory("wz_ddb_regalia_barrel_core","wz_ddb_regalia_barrel_core_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_barrel_core","wz_ddb_regalia_barrel_core_ingame");
+ItemSetPriceValue("wz_ddb_regalia_barrel_core",0);
+ItemSetWeight("wz_ddb_regalia_barrel_core",0.0);
+ItemSetStackLimit("wz_ddb_regalia_barrel_core",1);
+
+-- --------------------------------------------------------------------------
+-- Shared original-colour muzzle devices.
+-- Compact and Standard are normal brake-type muzzle devices.
+-- Grand is the only true silencer and is configured separately in regalia_sounds.script.
+-- --------------------------------------------------------------------------
+WeaponModCreate("wz_ddb_regalia_front_compact","brake",0,1,1,-2,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_front_compact","Regalia Muzzle Brake - Compact");
+ItemSetDescription("wz_ddb_regalia_front_compact","A compact Regalia muzzle brake with a small damage and recoil-control bonus. Fits only Regalia-family receivers.");
+ItemSetSpriteInventory("wz_ddb_regalia_front_compact","wz_ddb_regalia_front_compact_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_front_compact","wz_ddb_regalia_front_compact_ingame");
+ItemSetPriceValue("wz_ddb_regalia_front_compact",50000);
+ItemSetWeight("wz_ddb_regalia_front_compact",0.20);
+ItemSetStackLimit("wz_ddb_regalia_front_compact",1);
+
+WeaponModCreate("wz_ddb_regalia_front_standard","brake",0,5,3,-5,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_front_standard","Regalia Compensator - Standard");
+ItemSetDescription("wz_ddb_regalia_front_standard","A balanced Regalia compensator with stronger damage and recoil control. Fits only Regalia-family receivers.");
+ItemSetSpriteInventory("wz_ddb_regalia_front_standard","wz_ddb_regalia_front_standard_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_front_standard","wz_ddb_regalia_front_standard_ingame");
+ItemSetPriceValue("wz_ddb_regalia_front_standard",110000);
+ItemSetWeight("wz_ddb_regalia_front_standard",0.35);
+ItemSetStackLimit("wz_ddb_regalia_front_standard",1);
+
+WeaponModCreate("wz_ddb_regalia_front_grand","silencer",0,10,5,-9,0,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+ItemSetName("wz_ddb_regalia_front_grand","Regalia Suppressor - Grand");
+ItemSetDescription("wz_ddb_regalia_front_grand","The strongest Regalia front assembly and the family's only true suppressor. It provides maximum damage and recoil control.");
+ItemSetSpriteInventory("wz_ddb_regalia_front_grand","wz_ddb_regalia_front_grand_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_front_grand","wz_ddb_regalia_front_grand_ingame");
+ItemSetPriceValue("wz_ddb_regalia_front_grand",200000);
+ItemSetWeight("wz_ddb_regalia_front_grand",0.55);
+ItemSetStackLimit("wz_ddb_regalia_front_grand",1);
+
+-- --------------------------------------------------------------------------
+-- Shared magazine.
+-- --------------------------------------------------------------------------
+WeaponModCreate("wz_ddb_regalia_magazine_standard","magazine",0,0,2,0,-2,false,["wz_ddb_regalia","wz_ddb_regalia_prism"]);
+WeaponSetMagazineModCapacity("wz_ddb_regalia_magazine_standard",30);
+ItemSetName("wz_ddb_regalia_magazine_standard","Regalia Magazine - Standard");
+ItemSetDescription("wz_ddb_regalia_magazine_standard","The sealed Regalia 7.62x51 magazine. Improves reload handling and fits only Regalia-family receivers.");
+ItemSetSpriteInventory("wz_ddb_regalia_magazine_standard","wz_ddb_regalia_magazine_standard_inventory");
+ItemSetSpriteIngame("wz_ddb_regalia_magazine_standard","wz_ddb_regalia_magazine_standard_ingame");
+ItemSetPriceValue("wz_ddb_regalia_magazine_standard",30000);
+ItemSetWeight("wz_ddb_regalia_magazine_standard",0.45);
+ItemSetStackLimit("wz_ddb_regalia_magazine_standard",1);

@@ -1,0 +1,8 @@
+AUTHOR
+wujizhu1999
+
+PACKAGE CLEANUP
+This release package contains no inherited Workshop ID, previous author metadata, external mod folder number, or historical development readmes.
+
+ASSET RIGHTS
+Before making the Workshop item public, confirm that every included audio file is licensed for redistribution and add any attribution required by its source licence.

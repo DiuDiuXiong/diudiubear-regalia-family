@@ -1,0 +1,67 @@
+-- Diu Diu Bear trader and shop inventory.
+-- The NPC is mod-owned, copies the vanilla Barman template for safe bunker
+-- behavior, and uses a custom sprite, speaker, and trader.
+
+TraderCreate("wz_ddb_trader");
+TraderSetName("wz_ddb_trader","Diu Diu Bear's Relay");
+
+-- Regalia family receivers.
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia",3,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_prism",2,0);
+
+-- Original-colour Regalia attachments.
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_stock_compact",5,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_stock_standard",5,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_stock_grand",3,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_grip_standard",5,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_grip_grand",3,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_front_compact",5,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_front_standard",5,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_front_grand",3,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_magazine_standard",8,0);
+
+-- Colourful Prism attachment variants.
+-- Only the stock and grip currently have Prism-specific art; the front attachments
+-- remain the shared original-colour family.
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_stock_compact_prism",4,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_stock_standard_prism",4,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_stock_grand_prism",2,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_grip_standard_prism",4,0);
+TraderAddItem("wz_ddb_trader","wz_ddb_regalia_grip_grand_prism",2,0);
+
+-- 7.62x51 ammunition.
+TraderAddItem("wz_ddb_trader","ammo_762x51",1000,0);
+TraderAddItem("wz_ddb_trader","ammo_762x51_m61",500,0);
+
+-- Diu Diu Bear idle appearance.
+SpriteLoad("wz_ddb_bear_idle","NPCs/diu_diu_bear_idle.png",2,false,0,0);
+SpriteSetOrigin(
+    "wz_ddb_bear_idle",
+    SpriteGetWidth("wz_ddb_bear_idle") * 0.5,
+    SpriteGetHeight("wz_ddb_bear_idle") * 0.5
+);
+SpriteSetSpeed("wz_ddb_bear_idle",0.25);
+
+-- Diu Diu Bear dialogue.
+SpeakerCreate("wz_ddb_speaker");
+SpeakerAddHello("wz_ddb_speaker","The Networker moves information. I move hardware. Call me Diu Diu Bear.");
+SpeakerAddDialogueChoice("wz_ddb_speaker",DIALOGUE_TYPE_trade,"Patch me into the Regalia catalogue.");
+SpeakerAddDialogueChoice("wz_ddb_speaker",DIALOGUE_TYPE_back,"Drop the connection.");
+
+-- Create a mod-owned bunker NPC from the vanilla Barman template.
+NpcCopy("wz_ddb_npc","barman");
+
+-- Apply the custom polar-bear appearance and connect the speaker and trader.
+NpcSetArmor("wz_ddb_npc","no_item");
+NpcSetName("wz_ddb_npc","Diu Diu Bear");
+NpcSetTraderId("wz_ddb_npc","wz_ddb_trader");
+NpcSetSpeaker("wz_ddb_npc","wz_ddb_speaker");
+NpcSetSpriteIdle("wz_ddb_npc","wz_ddb_bear_idle");
+-- Reuse the idle sheet for the movement state so no inherited sprite appears.
+NpcSetSpriteMoving("wz_ddb_npc","wz_ddb_bear_idle");
+NpcSetImageSpeed("wz_ddb_npc",0.1,0.1);
+
+-- Spawn Diu Diu Bear at a fixed bunker coordinate beside the Networker.
+EventAssignFunction("enter_hub",func() {
+    NpcSpawn("wz_ddb_npc",549,1037);
+});
